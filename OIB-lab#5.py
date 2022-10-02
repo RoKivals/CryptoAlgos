@@ -8,7 +8,7 @@ def create_table(symbols: int, length: int):
     return table
 
 
-def fill_table(table, text: str):
+def fill_table(table: np.ndarray, text: str):
     curr_id = 0
     for x in range(len(table)):
         for i in range(len(table[x])):
@@ -20,7 +20,7 @@ def fill_table(table, text: str):
     return table
 
 
-def encryption(table, sequence: str) -> str:
+def encryption(table: np.ndarray, sequence: str) -> str:
     coded_str = ''
     for i in range(1, len(sequence) + 1):
         col_ind = sequence.index(str(i))
