@@ -1,8 +1,5 @@
 import random
-
-alphabet = "".join(chr(i).upper() + chr(i).lower() for i in range(ord('а'), ord('е') + 1)) + 'Ёё' + \
-           "".join(chr(i).upper() + chr(i).lower() for i in range(ord('ж'), ord('я') + 1)) + \
-           "".join(chr(i) for i in range(33, 65))
+from constants import *
 
 contour1 = ("".join(i for i in random.sample(alphabet, len(alphabet))),
             "".join(i for i in random.sample(alphabet, len(alphabet))),

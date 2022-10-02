@@ -1,8 +1,5 @@
 import numpy as np
-
-alphabet = "".join(chr(i).upper() + chr(i).lower() for i in range(ord('а'), ord('е') + 1)) + 'Ёё' + \
-           "".join(chr(i).upper() + chr(i).lower() for i in range(ord('ж'), ord('я') + 1)) + \
-           "".join(chr(i) for i in range(33, 65))
+from constants import *
 
 alp_matrix = np.array([])
 for i in range(len(alphabet)):
