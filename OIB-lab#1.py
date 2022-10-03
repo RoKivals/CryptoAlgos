@@ -2,13 +2,18 @@
 Шифр цезаря. Шаг по умолчанию = 0. Для кодирования используется алфавит русского языка + основные знаки препинания.
 '''
 
-alphabet = [chr(i) for i in range(ord('а'), ord('а') + 32)] + [chr(i) for i in range(33, 65)]
+# Исходный алфавит от а до ё и от ё до я + спец символы
+alphabet = [chr(i) for i in range(ord('а'), ord('е') + 1)] + ['ё'] + [chr(i) for i in range(ord('ж'), ord('я') + 1)] + \
+    [chr(i) for i in range(33, 65)]
 
 
 def cesar_code(text: str, step: int = 0) -> str:
     for x in range(len(text)):
         if text[x].lower() in alphabet:
+            # Ищем букву в исходном алфавите со сдвигом на step.
+            # Для обработки переполнения используется % len(alp)
             temp = alphabet[(alphabet.index(text[x].lower()) + step) % len(alphabet)]
+            # Если буква изначально была заглавной, то переводим temp в верхний регистр.
             if text[x].isupper():
                 text = text[0:x] + text[x::].replace(text[x], temp.upper(), 1)
             else:
