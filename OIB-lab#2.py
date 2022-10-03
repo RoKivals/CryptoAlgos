@@ -14,7 +14,7 @@ def encryption(text: str, code_type=0) -> str:
         if code_type == 0:
             text = text[0:i] + text[i::].replace(text[i], coding[flag % len(coding)][alphabet.index(text[i])], 1)
         else:
-            text = text[0:i] + text[i::].replace(text[i], alphabet[coding[flag % len(coding)].index(text[i])], 1)
+            text = text[0:i] + text[i::].replace(text[i], alphabet[coding[flag % len(coding)][alphabet.index(text[i])]], 1)
         flag += 1
     return text
 
