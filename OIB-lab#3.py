@@ -9,17 +9,17 @@ arr_contour = (contour1, contour2, contour3)
 def encryption(text: str, sequence: list, period: list) -> str:
     num_contour = 0
     curr_period = period[num_contour]
-    flag = 0
+    curr_alp = 0
     for i in range(len(text)):
         if curr_period == 0:
             num_contour = (num_contour + 1) % len(sequence)
             curr_period = period[num_contour]
-            flag = 0
+            curr_alp = 0
         curr_contour = sequence[num_contour] - 1
-        curr_alp = flag % len(arr_contour[curr_contour])
+        curr_alp = curr_alp % len(arr_contour[curr_contour])
         text = text[0:i] + text[i::].replace(text[i], arr_contour[curr_contour][curr_alp][alphabet.index(text[i])], 1)
         curr_period -= 1
-        flag += 1
+        curr_alp += 1
     return text
 
 
