@@ -1,4 +1,3 @@
-import random
 from constants import *
 
 coding = get_contour()
