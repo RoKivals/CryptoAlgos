@@ -1,11 +1,11 @@
-В репозитории реализованы базовые алгоритмы симметричного шифрования:
+Р’ СЂРµРїРѕР·РёС‚РѕСЂРёРё СЂРµР°Р»РёР·РѕРІР°РЅС‹ Р±Р°Р·РѕРІС‹Рµ Р°Р»РіРѕСЂРёС‚РјС‹ СЃРёРјРјРµС‚СЂРёС‡РЅРѕРіРѕ С€РёС„СЂРѕРІР°РЅРёСЏ:
 
-- [Шифр цезаря](https://github.com/RoKivals/CryptoAlgos/blob/master/Caesar%20cipher.py)
-- [Многоалфавитная замена](https://github.com/RoKivals/CryptoAlgos/blob/master/Contour%20encryption.py)
-- [Многоалфавитная замена с переменным контуром и периодом](https://github.com/RoKivals/CryptoAlgos/blob/master/Contour%20encryption%20with%20period.py)
+- [РЁРёС„СЂ С†РµР·Р°СЂСЏ](https://github.com/RoKivals/CryptoAlgos/blob/master/Caesar%20cipher.py)
+- [РњРЅРѕРіРѕР°Р»С„Р°РІРёС‚РЅР°СЏ Р·Р°РјРµРЅР°](https://github.com/RoKivals/CryptoAlgos/blob/master/Contour%20encryption.py)
+- [РњРЅРѕРіРѕР°Р»С„Р°РІРёС‚РЅР°СЏ Р·Р°РјРµРЅР° СЃ РїРµСЂРµРјРµРЅРЅС‹Рј РєРѕРЅС‚СѓСЂРѕРј Рё РїРµСЂРёРѕРґРѕРј](https://github.com/RoKivals/CryptoAlgos/blob/master/Contour%20encryption%20with%20period.py)
 
-- [Шифр Вижинера](https://github.com/RoKivals/CryptoAlgos/blob/master/Vigenere%20cipher.py)
-- [Табличное шифрование](https://github.com/RoKivals/CryptoAlgos/blob/master/Table%20encryption.py)
-- [Табличное шифрование с вакуумными координатами](https://github.com/RoKivals/CryptoAlgos/blob/master/Vacuum%20Table%20encryption.py)
+- [РЁРёС„СЂ Р’РёР¶РёРЅРµСЂР°](https://github.com/RoKivals/CryptoAlgos/blob/master/Vigenere%20cipher.py)
+- [РўР°Р±Р»РёС‡РЅРѕРµ С€РёС„СЂРѕРІР°РЅРёРµ](https://github.com/RoKivals/CryptoAlgos/blob/master/Table%20encryption.py)
+- [РўР°Р±Р»РёС‡РЅРѕРµ С€РёС„СЂРѕРІР°РЅРёРµ СЃ РІР°РєСѓСѓРјРЅС‹РјРё РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё](https://github.com/RoKivals/CryptoAlgos/blob/master/Vacuum%20Table%20encryption.py)
 
-- [XOR-шифрование](https://github.com/RoKivals/CryptoAlgos/blob/master/XOR%20encryption.py)
+- [XOR-С€РёС„СЂРѕРІР°РЅРёРµ](https://github.com/RoKivals/CryptoAlgos/blob/master/XOR%20encryption.py)
